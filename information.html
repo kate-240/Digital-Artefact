@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css.css" rel="stylesheet" type="text/css">
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: LightBlue;
+    }
+
+    /* Header Styles */
+    header {
+      background: linear-gradient(to right, #42ddf5, #357ae8);
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 40px;
+      color: white;
+      border-bottom: 3px solid #fff;
+    }
+
+    header img {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    /* Navigation Bar Styles */
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+    /* Section Layout */
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    nav {
+      width: 30%;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    article {
+      width: 65%;
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Form Styles */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      background-color: #357ae8;
+      color: white;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #42ddf5;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #777;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-size: 1.2em;
+      border-top: 3px solid #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav, article {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 30px;
+      }
+      
+      nav, article {
+        width: 100%;
+      }
+
+      li {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Information</h2>
+    <img src="cakes.jpg" alt="space" width="275" height="183">
+  </header>
+
+  <ul>
+    <li><a class="active" href="hello.html">Home</a></li>
+    <li><a href="baking.html">Baking</a></li>
+    <li><a href="ingredients.html">Ingredients</a></li>
+    <li><a href="mixing.html">Mixing</a></li>
+    <li><a href="toppings.html">Toppings</a></li>
+    <li><a href="information.html">Information</a></li>
+  </ul>
+
+  <section>
+    <nav>
+      <h1>Login</h1>
+      <form>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        
+        <label for="pword">Password:</label>
+        <input type="text" id="pword" name="pword">
+        
+        <input type="submit" value="Login">
+      </form>
+    </nav>
+
+    <article>
+      <h1>About</h1>
+      <p>This website is here to help make baking cakes easier by having all the information you need at your fingertips. Our website collects the information you need, including step-by-step instructions, ingredients, baking tips, different mixing techniques, and various types of icings/toppings that can be put onto the cake.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+</body>
+</html>
