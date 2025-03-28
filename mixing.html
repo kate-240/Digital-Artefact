@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css.css" rel="stylesheet" type="text/css">
+  <style>
+    /* Global reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: LightBlue;
+    }
+
+    /* Header Styles */
+    header {
+      background: linear-gradient(to right, #42ddf5, #357ae8);
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 40px;
+      color: white;
+    }
+
+    header img {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    /* Navigation Styles */
+    ul {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      list-style-type: none;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin: 0 15px;
+    }
+
+    li a {
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+      border-radius: 5px;
+    }
+
+    li a:hover,
+    li a.active {
+      background-color: #111;
+    }
+
+    /* Main Content Layout */
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 20px;
+    }
+
+    nav {
+      width: 30%;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    article {
+      width: 65%;
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Details & Summary Styling */
+    details {
+      margin-bottom: 15px;
+      background-color: #e8e8e8;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+
+    summary:hover {
+      color: #357ae8;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #777;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 30px;
+      border-radius: 5px;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav, article {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin: 0 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 30px;
+      }
+
+      nav, article {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Mixing</h2>
+    <img src="cakes.jpg" alt="space" width="275" height="183">
+  </header>
+
+  <ul>
+    <li><a class="active" href="hello.html">Home</a></li>
+    <li><a href="baking.html">Baking</a></li>
+    <li><a href="ingredients.html">Ingredients</a></li>
+    <li><a href="mixing.html">Mixing</a></li>
+    <li><a href="toppings.html">Toppings</a></li>
+    <li><a href="information.html">Information</a></li>
+  </ul>
+
+  <section>
+    <nav>
+      <p>These are the main methods used for making cakes, bread, cookies, and other sweet treats.</p>
+    </nav>
+
+    <article>
+      <h1>Mixing Techniques</h1>
+
+      <details>
+        <summary>Beating</summary>
+        <p>Beating incorporates air into the mixture by rapidly stirring with a spoon, whisk, or mixer.</p>
+      </details>
+
+      <details>
+        <summary>Blending</summary>
+        <p>Blending combines ingredients smoothly using a blender or a mixing tool.</p>
+      </details>
+
+      <details>
+        <summary>Creaming</summary>
+        <p>Creaming involves mixing butter and sugar until light and fluffy, often for cakes and cookies.</p>
+      </details>
+
+      <details>
+        <summary>Cutting</summary>
+        <p>Cutting is a technique used to mix fat into flour using a pastry blender or knife.</p>
+      </details>
+
+      <details>
+        <summary>Folding</summary>
+        <p>Folding gently incorporates light ingredients (like whipped egg whites) into heavier ones.</p>
+      </details>
+
+      <details>
+        <summary>Kneading</summary>
+        <p>Kneading develops gluten in dough by stretching and folding it repeatedly.</p>
+      </details>
+
+      <details>
+        <summary>Sifting</summary>
+        <p>Sifting aerates dry ingredients like flour and removes lumps for a smoother mixture.</p>
+      </details>
+
+      <details>
+        <summary>Stirring</summary>
+        <p>Stirring gently combines ingredients to distribute them evenly without incorporating too much air.</p>
+      </details>
+
+      <details>
+        <summary>Whipping</summary>
+        <p>Whipping adds air into ingredients like cream or egg whites, making them light and fluffy.</p>
+      </details>
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+</body>
+</html>
