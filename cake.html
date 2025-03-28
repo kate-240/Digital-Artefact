@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link href="css.css" rel="stylesheet" type="text/css">
+
+<style>
+
+  /* Resetting some basic styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff; /* Light Blue background */
+    color: #333;
+  }
+
+  /* Header */
+  header {
+    background: linear-gradient(to right, #42ddf5, #357ae8);
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  header img {
+    width: 275px;
+    height: 183px;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+  /* Navigation Bar */
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+  .active {
+    background-color: #111;  }
+
+  /* Section */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 20px;
+  }
+
+  nav {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  article {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  article h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  article h3 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  article p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  article img {
+    width: 100%;
+    max-width: 275px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+
+    article {
+      width: 100%;
+    }
+
+    nav {
+      width: 100%;
+    }
+  }
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <h2>Cakes</h2>
+  <img src="cakes.jpg" alt="space">
+</header>
+
+<ul>
+  <li><a class="active" href="hello.html">Home</a></li>
+  <li><a href="baking.html">Baking</a></li>
+  <li><a href="ingredients.html">Ingredients</a></li>
+  <li><a href="mixing.html">Mixing</a></li>
+  <li><a href="toppings.html">Toppings</a></li>
+  <li><a href="information.html">Information</a></li>
+</ul> 
+
+<section>
+  <nav>
+    <h1>Info</h1>
+    <p>These three cakes are the main cakes here we have: a vanilla cake, a chocolate cake, and a classic sponge cake with jam.</p>
+  </nav>
+  
+  <article>
+    <img src="vanilla.jpg" alt="Vanilla Cake">
+    <h1>Vanilla Cake Recipe</h1>
+    <h3>Step 1</h3>
+    <p>Heat the oven to 180°C (gas mark 4). Lightly grease an 18cm (7in) round cake tin with a little extra butter or margarine and cut a piece of greaseproof paper or non-stick baking parchment to fit the base of the tin.</p>
+
+    <h3>Step 2</h3>
+    <p>Put all the ingredients into a large mixing bowl and beat with a wooden spoon or a hand-held mixer for 1 minute, or until just combined. It's important not to beat the batter too much - just long enough to make it smooth.</p>
+
+    <h3>Step 3</h3>
+    <p>Pour or spoon the mixture into the tin, smooth the top and bake on the middle shelf of the oven for about 45-50 minutes. The cake is cooked when it looks well risen and golden; the top should spring back when lightly touched with a fingertip. Another test is to insert a skewer into the centre of the cake - it should come out clean.</p>
+  </article>
+</section>
+
+<hr>
+
+<section>
+  <article>
+    <img src="chocolate.jpg" alt="Chocolate Cake">
+    <h1>Chocolate Cake Recipe</h1>
+    <h3>Step 1</h3>
+    <p>Preheat the oven to 180°C/160°C fan/Gas Mark 4. Grease and line two 20cm sandwich tins.</p>
+
+    <h3>Step 2</h3>
+    <p>Measure out the ingredients and then sift the flour, cocoa powder and baking powder together in a mixing bowl.</p>
+
+    <h3>Step 3</h3>
+    <p>Pour the oil into a separate mixing bowl. Add the sugar - whisk it in with a balloon whisk until well combined.</p>
+
+    <h3>Step 4</h3>
+    <p>Add the eggs to the oil and sugar mixture one at a time, alternating with a large spoonful of the flour mixture.</p>
+
+    <h3>Step 5</h3>
+    <p>Add the rest of the flour mixture and stir with a large metal spoon to combine. Stir in the milk to loosen the batter slightly (you may not need all the milk).</p>
+
+    <h3>Step 6</h3>
+    <p>Divide the batter between the two tins and bake for 20-25 minutes until a skewer inserted into the middle of one of the cakes comes out clean.</p>
+
+    <h3>Step 7</h3>
+    <p>Leave to cool for five minutes in the tins before carefully turning out onto a wire rack to cool completely.</p>
+  </article>
+</section>
+
+<hr>
+
+<section>
+  <article>
+    <img src="classic.jpg" alt="Classic Sponge Cake">
+    <h1>Classic Sponge Cake Recipe</h1>
+    <h3>Step 1</h3>
+    <p>Sift flour & baking powder in your food processor, now add the sugar, eggs, and softened butter (get your butter out of the fridge and let it come up to room temperature). Whizz until smooth and all mixed together.</p>
+
+    <h3>Step 2</h3>
+    <p>Divide your mixture into two greased 7" cake tins OR divide into 12 greased deep muffin tins. Tip: Whichever you do, smooth the tops off (as best you can) with the back of a spoon.</p>
+
+    <h3>Step 3</h3>
+    <p>- For "muffin" tins: Place in your pre-heated oven for 20-25 minutes.<br>
+    - For 7" cake tins: Place in your pre-heated oven for 25-30 minutes.</p>
+
+    <h3>Step 4</h3>
+    <p>Keep an eye on them as overcooking times can vary. The best method is to try it and see which is the best time for your oven.</p>
+
+    <h3>Step 5</h3>
+    <p>Once cooked, remove from tins and place on a cooling rack. The rest is up to you: cut in half, spread with jam and freshly whipped cream, place the lid back on, and sprinkle with icing sugar.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>

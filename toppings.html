@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css.css" rel="stylesheet" type="text/css">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: LightBlue;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style the header */
+    header {
+      background: linear-gradient(to right, #42ddf5, #357ae8);
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Layout for the main content area */
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    nav, ol {
+      width: 30%;
+      padding: 20px;
+      background: #f0f0f0;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+    }
+
+    
+    
+
+    article {
+      width: 65%;
+      padding: 20px;
+      background-color: #f1f1f1;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    article h3 {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+
+    .dropdown {
+      margin-bottom: 20px;
+    }
+
+    .dropdown-content {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      width: 100%;
+    }
+
+    .dropdown img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .dropdown p {
+      font-size: 1em;
+    }
+
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+      nav, article {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .dropdown-content {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <script>
+    function toggleDropdown(id) {
+      var content = document.getElementById(id);
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h2>Toppings</h2>
+  <img src="cakes.jpg" alt="space" width="275" height="183"> 
+</header>
+
+<ul>
+  <li><a class="active" href="hello.html">Home</a></li>
+  <li><a href="baking.html">Baking</a></li>
+  <li><a href="ingredients.html">Ingredients</a></li>
+  <li><a href="mixing.html">Mixing</a></li>
+  <li><a href="toppings.html">Toppings</a></li>
+  <li><a href="information.html">Information</a></li>
+</ul>
+
+<section>
+  <nav>
+    <h1>Cake Toppings</h1>
+    <ol>
+      <li>Royale Icing</li>
+      <li>Rolled Fondant</li>
+      <li>Marzipan</li>
+      <li>Chocolate Ganache Glaze</li>
+      <li>Mirror Glaze</li>
+      <li>Sprinkles</li>
+    </ol>
+  </nav>
+
+  <article>
+    <div class="dropdown">
+      <h3 onclick="toggleDropdown('royale')">Royal Icing</h3>
+      <img src="royal.jpg" alt="Royal Icing">
+      <div id="royale" class="dropdown-content">
+        <p>Royal icing is a smooth, hard-drying icing made from egg whites and powdered sugar. It's commonly used for intricate decorations.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <h3 onclick="toggleDropdown('fondant')">Rolled Fondant</h3>
+      <img src="fondant.jpg" alt="Rolled Fondant">
+      <div id="fondant" class="dropdown-content">
+        <p>Rolled fondant is a pliable sugar paste used to cover cakes smoothly, giving a polished, professional finish.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <h3 onclick="toggleDropdown('marzipan')">Marzipan</h3>
+      <img src="marzipan.jpg" alt="Marzipan">
+      <div id="marzipan" class="dropdown-content">
+        <p>Marzipan is a sweet almond-based paste used for covering cakes or sculpting edible decorations.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <h3 onclick="toggleDropdown('ganache')">Chocolate Ganache Glaze</h3>
+      <img src="ganache.jpg" alt="Chocolate Ganache">
+      <div id="ganache" class="dropdown-content">
+        <p>Chocolate ganache is a rich mixture of chocolate and cream, used as a glaze, filling, or frosting.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <h3 onclick="toggleDropdown('mirror')">Mirror Glaze</h3>
+      <img src="mirror.jpg" alt="Mirror Glaze">
+      <div id="mirror" class="dropdown-content">
+        <p>Mirror glaze is a glossy, shiny glaze made with gelatin, sugar, and condensed milk, creating a reflective finish.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <h3 onclick="toggleDropdown('sprinkles')">Sprinkles</h3>
+      <img src="sprinkles.jpg" alt="Sprinkles">
+      <div id="sprinkles" class="dropdown-content">
+        <p>Sprinkles are small decorative candies used to add color, texture, and fun to cakes and desserts.</p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
