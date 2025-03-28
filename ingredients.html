@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css.css" rel="stylesheet" type="text/css">
+  <style>
+    /* Reset styling */
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Style the header */
+    header {
+      background: linear-gradient(to right, #42ddf5, #357ae8);
+      padding: 40px;
+      text-align: center;
+      font-size: 36px;
+      color: white;
+    }
+
+    /* General body styles */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: LightBlue;
+    }
+
+    /* Create the main layout */
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    /* Content area styling */
+    article {
+      flex: 0 0 70%;
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+      margin-left: 20px;
+    }
+
+    /* Sidebar styling */
+    nav {
+      flex: 0 0 30%;
+      background-color: #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    nav p {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      background-color: #e2e2e2;
+      border-radius: 5px;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      background-color: #42ddf5;
+      color: white;
+    }
+
+    /* Dropdown content styling */
+    .dropdown-content {
+      display: none;
+      padding: 15px;
+      background-color: #c2c2c2;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      font-size: 22px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    li {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+      }
+
+      article {
+        margin-left: 0;
+        flex: 0 0 100%;
+      }
+
+      nav {
+        flex: 0 0 100%;
+      }
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #777;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Ingredients</h2>
+    <img src="cakes.jpg" alt="space" width="275" height="183">
+  </header>
+
+  <ul>
+    <li><a class="active" href="hello.html">Home</a></li>
+    <li><a href="baking.html">Baking</a></li>
+    <li><a href="ingredients.html">Ingredients</a></li>
+    <li><a href="mixing.html">Mixing</a></li>
+    <li><a href="toppings.html">Toppings</a></li>
+    <li><a href="information.html">Information</a></li>
+  </ul> 
+
+  <section>
+    <!-- Sidebar -->
+    <nav>
+      <h1>Information</h1>
+      <p>Here are the Ingredients list of what you will need for each cake, press the cakes button to get the instructions on how to bake each cake.</p>
+      <li><a class="centre" href="cake.html">Cakes</a></li>
+    </nav>
+
+    <!-- Main content -->
+    <article>
+      <h2 onclick="toggleDropdown('vanilla')">Vanilla Cake &#9662;</h2>
+      <div id="vanilla" class="dropdown-content">
+        <h3>Ingredients</h3>
+        <li>2 ¼ cups All-Purpose Flour</li>
+        <li>2 ¼ teaspoons Baking Powder</li>
+        <li>¾ teaspoon Salt</li>
+        <li>2 ¾ cups Unsalted Butter (room temperature)</li>
+        <li>3 cups Granulated Sugar</li>
+        <li>3 Large Eggs (room temperature)</li>
+        <li>3 ½ teaspoons Vanilla</li>
+        <li>1 cup Buttermilk (or whole milk, room temperature)</li>
+        <li>6 Large Egg Whites</li>
+      </div>
+
+      <h2 onclick="toggleDropdown('chocolate')">Chocolate Cake &#9662;</h2>
+      <div id="chocolate" class="dropdown-content">
+        <h3>Ingredients</h3>
+        <li>175 grams Self-Raising Flour</li>
+        <li>100 grams Cocoa Powder</li>
+        <li>1 teaspoon Baking Powder</li>
+        <li>240 milliliters Vegetable Oil</li>
+        <li>225 grams Caster Sugar</li>
+        <li>3 Medium Eggs</li>
+        <li>4 tablespoons Milk</li>
+        <li>200 grams Icing Sugar</li>
+        <li>125 grams Spread (or butter, at room temperature)</li>
+      </div>
+
+      <h2 onclick="toggleDropdown('classic')">Classic Cake &#9662;</h2>
+      <div id="classic" class="dropdown-content">
+        <h3>Ingredients</h3>
+        <li>225 grams Self Raising Flour</li>
+        <li>225 grams Caster Sugar</li>
+        <li>225 grams Softened Butter</li>
+        <li>2 teaspoons Baking Powder</li>
+        <li>4 Free Range Eggs</li>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+  <script>
+    function toggleDropdown(id) {
+      var dropdown = document.getElementById(id);
+      if (dropdown.style.display === "none" || dropdown.style.display === "") {
+        dropdown.style.display = "block";
+      } else {
+        dropdown.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
